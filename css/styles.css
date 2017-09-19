@@ -1,0 +1,134 @@
+*{
+box-sizing: border-box;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #A9A9A9;
+  border-radius: 0;
+  border: 4;
+  border-color: black;
+  height: 72px;
+ 
+}
+
+.navbar-brand {
+  padding-top: 20px;
+  padding-left: 7px;
+}
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  letter-spacing: 1.1px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 0px;
+}
+#nav-list a {
+  color: #951C49;
+  background-color: #A9A9A9;
+  text-align: center;
+
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  margin-top: -50px;
+  clear: both;
+}
+/**END HEADER**/
+
+
+/**MAIN CONTENT**/
+
+#menu-title{
+  color: #951C49;
+  margin-top: 30px;
+}
+
+ 
+ .paragraph-content {
+  color: #333333;
+  height: 600px;
+  width: 100%;
+  
+ }
+
+.content2 {
+  color: #333333;
+  height: 600px;
+  width: 100%;
+  }
+
+
+ .content3 {
+  color: #333333;
+  height: 600px;
+  width: 100%;
+  
+ }
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+
+
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+
+
+
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+  #header-nav{
+    height: 100px;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 20px;
+    padding-left: 35px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  
+  /* End Header */
