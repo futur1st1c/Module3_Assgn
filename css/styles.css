@@ -1,5 +1,6 @@
 *{
 box-sizing: border-box;
+margin: 0;
 }
 
 /** HEADER **/
@@ -8,30 +9,30 @@ box-sizing: border-box;
   border-radius: 0;
   border: 4;
   border-color: black;
-  height: 72px;
- 
+  
 }
 
 .navbar-brand {
   padding-top: 20px;
-  padding-left: 7px;
+  padding-left: 0px;
 }
 .navbar-brand h1 {
   font-family: 'Lora', serif;
   color: black;
-  font-size: 35px;
+  font-size: 2.5em;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
   letter-spacing: 1.1px;
+  margin-left: -5px;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 #nav-list {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 #nav-list a {
   color: #951C49;
@@ -62,63 +63,68 @@ box-sizing: border-box;
   color: #333333;
   height: 600px;
   width: 100%;
+  border: 2px solid green;
+  padding: 30px 10px;
+  margin: 15px 0px 30px;
+  background-color: #795548;
+}
   
- }
 
 .content2 {
   color: #333333;
   height: 600px;
-  width: 100%;
+  border: 2px solid green;
+  padding: 30px 10px;
+  margin: 15px 0px 30px;
   }
 
 
  .content3 {
   color: #333333;
   height: 600px;
-  width: 100%;
+  border: 2px solid green;
+  padding: 30px 10px;
+  margin: 15px 0px 30px;
   
  }
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   
-
-
-
+#collapsable-nav a { /* Collapsed nav menu text */
+    visibility: hidden;}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   
-
-
-
+#collapsable-nav a { /* Collapsed nav menu text */
+    visibility: hidden;}
 }
+
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   
-
-
-
-
+ #collapsable-nav a { /* Collapsed nav menu text */
+    visibility: hidden;}
 }
+
+
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
 
-  #header-nav{
-    height: 100px;
-  }
+  
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
   }
-  .navbar-brand h1 { /* Restaurant name */
+  .navbar-brand h1 { 
     padding-top: 20px;
     padding-left: 35px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size:5vw; /* 1vw = 1% of viewport width */
   }
   
 
@@ -129,6 +135,6 @@ box-sizing: border-box;
     font-size: 1em;
     margin-right: 5px;
   }
-
+}
   
   /* End Header */
