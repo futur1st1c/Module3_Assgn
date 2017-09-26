@@ -40,6 +40,11 @@ margin: 0;
   text-align: center;
 
 }
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
@@ -63,81 +68,78 @@ margin: 0;
 }
 
  
- .paragraph-content {
+ #paragraph-content {
   color: #333333;
   height: 800px;
   border: 2px solid green;
   padding: 30px 10px;
   background-color: #795548;
   float: left;
-   width: 425px;
-  margin: 0px 0px 0px 17px;
-}
-  
-
-.content2 {
-  color: #333333;
-  height: 800px;
-   width: 425px;
-  border: 2px solid green;
-  padding: 30px 10px;
-  float: left;
-  margin: 0px 0px 0px 17px;
+  width: 30%
+  margin: 10px 0px 0px 17px;
 }
 
 
- .content3 {
+#content2{
   color: #333333;
   height: 800px;
- width: 425px;
   border: 2px solid green;
   padding: 30px 10px;
+  background-color: #aaa;
   float: left;
-  margin: 0px 0px 0px 17px;
- }
+  width: 30%
+  margin: 10px 0px 0px 17px;
+}
+
+#content3{
+  color: #333333;
+  height: 800px;
+  border: 2px solid green;
+  padding: 30px 10px;
+  background-color:#ffff00 ;
+  float: left;
+  width: 30%
+  margin: 10px 0px 0px 17px;
+
+}
+
+
+#content2 h2 ,#content3 h2,#paragraph-content h2{
+  margin: -5px 0px 30px;
+}
+
 
 /********** Large devices only **********/
+@media (min-width:1200px) {
+  
+#collapsable-nav a { /* Collapsed nav menu text */
+    visibility: hidden;  
+  }
 
-
+  
+}
 
 
 /********** Medium devices only **********/
-@media (max-width: 1199px) and (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   
 #collapsable-nav a { /* Collapsed nav menu text */
     visibility: hidden;
   }
-
-  .paragraph-content{
-    width: 47%;
-  }
-  .content2{
-    width: 47%;
-  }
-  .content3{
-    width: 97%;
-    margin-top: 20px;
+  #content3{
+    margin-top: 50px;
+    width: 206%;
   }
 }
 
   
 /********** Small devices only **********/
-@media (max-width: 991x) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   
  #collapsable-nav a { /* Collapsed nav menu text */
     visibility: hidden;
   }
 
-  .paragraph-content{
-    width: 70%;
-  }
-  .content2{
-    width: 70%;
-  }
-  .content3{
-    width: 70%;
-    margin-top: 20px;
-  }
 }
 
 
@@ -151,6 +153,7 @@ margin: 0;
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
+    width: 100%;
   }
   .navbar-brand h1 { 
     padding-top: 20px;
