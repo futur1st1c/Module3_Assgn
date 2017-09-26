@@ -58,57 +58,88 @@ margin: 0;
   margin-top: 30px;
 }
 
+#main-content {
+  width: 100%;
+}
+
  
  .paragraph-content {
   color: #333333;
-  height: 600px;
-  width: 100%;
+  height: 800px;
   border: 2px solid green;
   padding: 30px 10px;
-  margin: 15px 0px 30px;
   background-color: #795548;
+  float: left;
+   width: 425px;
+  margin: 0px 0px 0px 17px;
 }
   
 
 .content2 {
   color: #333333;
-  height: 600px;
+  height: 800px;
+   width: 425px;
   border: 2px solid green;
   padding: 30px 10px;
-  margin: 15px 0px 30px;
-  }
+  float: left;
+  margin: 0px 0px 0px 17px;
+}
 
 
  .content3 {
   color: #333333;
-  height: 600px;
+  height: 800px;
+ width: 425px;
   border: 2px solid green;
   padding: 30px 10px;
-  margin: 15px 0px 30px;
-  
+  float: left;
+  margin: 0px 0px 0px 17px;
  }
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
-  
-#collapsable-nav a { /* Collapsed nav menu text */
-    visibility: hidden;}
-}
+
+
+
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 992px) {
   
 #collapsable-nav a { /* Collapsed nav menu text */
-    visibility: hidden;}
+    visibility: hidden;
+  }
+
+  .paragraph-content{
+    width: 47%;
+  }
+  .content2{
+    width: 47%;
+  }
+  .content3{
+    width: 97%;
+    margin-top: 20px;
+  }
 }
 
-
+  
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991x) and (min-width: 768px) {
   
  #collapsable-nav a { /* Collapsed nav menu text */
-    visibility: hidden;}
+    visibility: hidden;
+  }
+
+  .paragraph-content{
+    width: 70%;
+  }
+  .content2{
+    width: 70%;
+  }
+  .content3{
+    width: 70%;
+    margin-top: 20px;
+  }
 }
+
 
 
 
